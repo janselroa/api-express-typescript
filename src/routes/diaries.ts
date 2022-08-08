@@ -1,9 +1,10 @@
 import { Router } from "express";
+import getData from "../services/diaries"
 const router = Router()
 router.get("/",(_,res)=>{
-    res.send("Fetching all entry diaires")
+    res.json(getData())
 })
 router.post("/",(_,res)=>{
-    res.send("writing entry diaires")    
+        res.send("tal")
 })
 export default router
